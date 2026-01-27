@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-circle {
+  animation: rotateSlow 22s linear infinite;
+}
+
+/* Moon dots */
+.orbit-moon {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #3b82f6;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.8);
+}
+
+/* Different positions for moons */
+.moon-1 {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.moon-2 {
+  bottom: 40px;
+  left: 20px;
+}
+.moon-3 {
+  bottom: 40px;
+  right: 20px;
+}
+.moon-4 {
+  top: 50%;
+  right: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
